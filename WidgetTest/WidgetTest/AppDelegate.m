@@ -40,6 +40,39 @@
     CAAnimation *ca;
     return YES;
 }
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    NSLog(@"%s", __FUNCTION__);
+    return YES;
+}
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{
+    NSLog(@"%s", __FUNCTION__);
+    
+    //异常退出
+    [self exitApplication];
+    
+    return YES;
+}
+- (void)exitApplication {
+
+    AppDelegate *app = [UIApplication sharedApplication].delegate;
+    UIWindow *window = app.window;
+    
+    [UIView animateWithDuration:0.0f animations:^{
+        window.alpha = 0;
+        window.frame = CGRectMake(0, window.bounds.size.width, 0, 0);
+    } completion:^(BOOL finished) {
+        exit(0);
+    }];
+    //exit(0);
+    
+}
+
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    NSLog(@"%s", __FUNCTION__);
+
+    return YES;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

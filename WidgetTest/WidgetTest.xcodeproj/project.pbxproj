@@ -23,6 +23,7 @@
 		C8AF7F571BA6D59900116C24 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AF7F561BA6D59900116C24 /* MainInterface.storyboard */; };
 		C8AF7F5A1BA6D59900116C24 /* ShareTest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C8AF7F4F1BA6D59900116C24 /* ShareTest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C8EEDED61BADACD700D43CE2 /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EEDED51BADACD700D43CE2 /* ChildViewController.m */; };
+		E7BCF1DF1BD4A71900FCF96A /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BCF1DE1BD4A71900FCF96A /* CustomCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		C8AF7F5E1BA6D5A800116C24 /* ShareTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ShareTest.entitlements; sourceTree = "<group>"; };
 		C8EEDED41BADACD700D43CE2 /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
 		C8EEDED51BADACD700D43CE2 /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		E7BCF1DD1BD4A71900FCF96A /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		E7BCF1DE1BD4A71900FCF96A /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +217,8 @@
 				C8AF7F3E1BA6A89B00116C24 /* MainInterface.storyboard */,
 				C8AF7F391BA6A89B00116C24 /* Supporting Files */,
 				C8AF7F491BA6BA6000116C24 /* FuckingTest.storyboard */,
+				E7BCF1DD1BD4A71900FCF96A /* CustomCollectionViewCell.h */,
+				E7BCF1DE1BD4A71900FCF96A /* CustomCollectionViewCell.m */,
 			);
 			path = MyWidget;
 			sourceTree = "<group>";
@@ -332,7 +337,7 @@
 				TargetAttributes = {
 					C8AF7F061BA6A81C00116C24 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 5AKB523DZ4;
+						DevelopmentTeam = QB46F2C65Z;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -345,7 +350,7 @@
 					};
 					C8AF7F331BA6A89A00116C24 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 5AKB523DZ4;
+						DevelopmentTeam = QB46F2C65Z;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -354,7 +359,7 @@
 					};
 					C8AF7F4E1BA6D59900116C24 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 5AKB523DZ4;
+						DevelopmentTeam = QB46F2C65Z;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -446,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8AF7F3D1BA6A89B00116C24 /* TodayViewController.m in Sources */,
+				E7BCF1DF1BD4A71900FCF96A /* CustomCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +593,7 @@
 				INFOPLIST_FILE = WidgetTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maqj.WidgetTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -602,6 +609,7 @@
 				INFOPLIST_FILE = WidgetTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maqj.WidgetTest1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -654,6 +662,7 @@
 				INFOPLIST_FILE = MyWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maqj.WidgetTest1.MyWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -669,6 +678,7 @@
 				INFOPLIST_FILE = MyWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maqj.WidgetTest1.MyWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -687,6 +697,7 @@
 				);
 				INFOPLIST_FILE = ShareTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maqj.WidgetTest1.ShareTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -701,6 +712,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ShareTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maqj.WidgetTest1.ShareTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;

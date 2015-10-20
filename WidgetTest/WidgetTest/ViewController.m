@@ -48,6 +48,10 @@
 
     });
     
+    int x = 0;
+    
+    NSLog(@"%d", 120/x);
+    
 //    [self.navigationController popViewControllerAnimated:<#(BOOL)#>]
 }
 
@@ -58,7 +62,7 @@
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    NSUserDefaults *user = [[NSUserDefaults alloc] initWithSuiteName:@"group.maqj"];
+    NSUserDefaults *user = [[NSUserDefaults alloc] initWithSuiteName:@"group.widgetmaqj"];
     self.textLabel.text = [user objectForKey:@"kWidgetValue"];
 }
 
